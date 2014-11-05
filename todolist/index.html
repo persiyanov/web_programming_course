@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="stylesheet" type="text/css" href="css.css"/>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="logic.js"></script>
+    <meta charset="UTF-8">
+    <title>Simple Todo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="page">
+            <div class="heading">
+                <h1>Todo List</h1>
+                <form class="pure-form">
+                    <fieldset>
+                        <input type="text" id="task-descr" class="pure-input-2-3" placeholder="What do you need to do today?">
+                        <button type="button" id="add-task" class="pure-button pure-button-primary">Add</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="entries">
+                <h4>Here are some tasks to do.</h4>
+                <div id="tasks">
+                    <div class="task">
+                        <input type="checkbox">
+                        <span>First task.</span>
+                        <button class="delete-task">X</button>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox">
+                        <span>Second task.</span>
+                        <button class="delete-task">X</button>
+                    </div>
+                    <div class="task">
+                        <input type="checkbox">
+                        <span>Third task.</span>
+                        <button class="delete-task">X</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="total">3 total</div>
+                <div class="accomplished">1 done</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
