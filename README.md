@@ -1,4 +1,7 @@
-web_programming_course
-======================
+I'll place here my projects from Web Programming course (2014-2015) at MIPT.
+_______________
 
-There are my projects for 'https://github.com/vpavlenko/web-programming' university course.
+##Todo List
+Implementation of Todo List. This project aims to work with CSS & CSS Frameworks, JS and jQuery.
+___________
+You can find course sources [here](https://github.com/vpavlenko/web-programming).
