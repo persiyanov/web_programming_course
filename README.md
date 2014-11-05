@@ -1,4 +1,4 @@
-I'll place here my projects from Web Programming course (2014-2015) at MIPT.
+I'll place here my projects from [Web Programming course](https://github.com/vpavlenko/web-programming) (2014-2015) at MIPT.
 __________________
 
 ##Todo List
