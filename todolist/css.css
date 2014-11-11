@@ -19,7 +19,7 @@
 }
 
 body {
-    background: #fff url('img/swirl_pattern.png');
+    background: #fff url('i/swirl_pattern.png');
     margin: 0;
     padding: 40px 0;
     text-rendering: optimizeLegibility;
@@ -106,10 +106,15 @@ button:focus {
 }
 
 .footer {
+    position: relative;
     border-top: 1px solid #909090;
     margin: 12px 5px 0px 5px;
     padding-top: 5px;
-    height: 30px;
+    height: 70px;
+}
+
+.edition-form {
+    display: inline;
 }
 
 .total, .accomplished {
@@ -216,3 +221,11 @@ button:focus {
 .task > input[type=checkbox]:checked ~ span {
     text-decoration: line-through;
 }*/
+
+
+
+.additionals {
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.3;
+}
