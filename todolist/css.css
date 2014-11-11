@@ -4,8 +4,22 @@
     box-sizing: border-box;
 }
 
+.button-success {
+    background: rgb(28, 184, 65) !important; /* this is a green */
+    color: white !important;
+}
+
+.button-error {
+    background: rgb(202, 60, 60) !important; /* this is a maroon */
+    color: white !important;
+}
+    
+.button-small {
+    font-size: 85% !important;
+}
+
 body {
-    background: #fff url('//static-files.googlecode.com/hg/bg/0071.png');
+    background: #fff url('img/swirl_pattern.png');
     margin: 0;
     padding: 40px 0;
     text-rendering: optimizeLegibility;
@@ -95,11 +109,20 @@ button:focus {
     border-top: 1px solid #909090;
     margin: 12px 5px 0px 5px;
     padding-top: 5px;
+    height: 30px;
 }
 
 .total, .accomplished {
-    width: 50%;
     padding: 0 20px;
+}
+
+.options {
+    display: inline-block;
+    margin: 0 auto;
+}
+    
+.mark-all, .delete-all {
+    display: inline-block;
 }
 
 .total {
@@ -108,7 +131,7 @@ button:focus {
 }
 
 .accomplished {
-    display: inline-block;
+    float: right;
     text-align: right;
 }
 
@@ -122,27 +145,42 @@ button:focus {
 }
 
 .task {
+    display: inline-block;
     position: relative;
     width: 100%;
     padding: 5px;
+    margin-top: 5px;
     text-align: left;
+    word-wrap: break-word;
 }
 
 .task:hover > button.delete-task {
     display: inline !important;
 }
 
-.tasks span {
+/*
+.task:hover:after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 90%;
+    height: 1px;
+    border-bottom: 1px solid #909090;
+}
+*/
+
+.task span {
     margin: 5px;
     display: inline;
-    height: 30px;
+    min-height: 30px;
     text-align: left;
 }
 
 .delete-task {
     float: right;
     display: none !important;
-    font-size:8px;
+    font-size:16px;
     -moz-border-radius:42px;
     -webkit-border-radius:42px;
     border-radius:42px;
@@ -171,6 +209,10 @@ button:focus {
 
 .delete-task:active {
       position:relative;
-      top:1px;
+      top: 1px;
 }
 
+/*
+.task > input[type=checkbox]:checked ~ span {
+    text-decoration: line-through;
+}*/

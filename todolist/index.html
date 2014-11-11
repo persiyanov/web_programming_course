@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="logic.js"></script>
     <meta charset="UTF-8">
     <title>Simple Todo List</title>
 </head>
@@ -14,21 +13,17 @@
         <div class="page">
             <div class="heading">
                 <h1>Todo List</h1>
-                <form class="pure-form">
+                <form id="tasks-adding" class="pure-form">
                     <fieldset>
-                        <input type="text" id="task-descr" class="pure-input-2-3" placeholder="What do you need to do today?">
-                        <button type="button" id="add-task" class="pure-button pure-button-primary">Add</button>
+                        <input autocomplete="off" type="text" id="task-descr" class="pure-input-2-3" placeholder="What do you need to do today?">
+                        <button type="submit" id="add-task" class="pure-button pure-button-primary">Add</button>
                     </fieldset>
                 </form>
             </div>
             <div class="entries">
                 <h4>Here are some tasks to do.</h4>
                 <div id="tasks">
-                    <div class="task">
-                        <input type="checkbox">
-                        <span>First task.</span>
-                        <button class="delete-task">X</button>
-                    </div>
+<!--
                     <div class="task">
                         <input type="checkbox">
                         <span>Second task.</span>
@@ -39,13 +34,24 @@
                         <span>Third task.</span>
                         <button class="delete-task">X</button>
                     </div>
+-->
                 </div>
             </div>
             <div class="footer">
-                <div class="total">3 total</div>
-                <div class="accomplished">1 done</div>
+                <div class="total"><span>0</span> total</div>
+                <div class="options">
+                    <div class="mark-all">
+                        <button class="pure-button button-success button-small">Mark all as done</button>
+                    </div>
+                    <div class="delete-all">
+                        <button class="pure-button button-error button-small">Delete all tasks</button>
+                    </div>
+                </div>
+                <div class="accomplished"><span>0</span> done</div>
             </div>
         </div>
     </div>
+    
+    <script src="logic.js"></script>
 </body>
 </html>
