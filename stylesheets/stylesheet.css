@@ -768,10 +768,6 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
-.project-link {
-    text-decoration: underline;
-    font-size: 3em;
-}
 
 /* #Media Queries
 ================================================== */
