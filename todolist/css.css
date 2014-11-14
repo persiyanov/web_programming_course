@@ -10,7 +10,7 @@
 }
 
 .button-error {
-    background: rgb(202, 60, 60) !important; /* this is a maroon */
+    background: rgb(223, 117, 20) !important; /* this is an orange */
     color: white !important;
 }
     
@@ -126,7 +126,7 @@ button:focus {
     margin: 0 auto;
 }
     
-.mark-all, .delete-all {
+.mark-all, .delete-marked {
     display: inline-block;
 }
 
